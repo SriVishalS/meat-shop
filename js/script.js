@@ -6,7 +6,6 @@ function myFunction() {
 
 function showPage() {
   document.querySelector(".loaderWrapper").style.display = "none";
-  document.querySelectorAll("section").style.display="block"
 }
 const nav = document.querySelector(".my-nav");
 
