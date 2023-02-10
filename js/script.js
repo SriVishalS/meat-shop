@@ -101,17 +101,6 @@ p.forEach((p) => {
   });
 });
 // end script
-
-// Script for unique scrollbar
-let progress = document.getElementById("progressBar");
-let totalHeight = document.body.scrollHeight - window.innerHeight;
-
-window.onscroll = function () {
-  let progressHeignt = (window.pageYOffset / totalHeight) * 100;
-  progress.style.height = progressHeignt + "%";
-};
-// End unique scrollbar script
-
 // script for modal
 const modal = document.getElementById("modal");
 const login = document.getElementById("login");
