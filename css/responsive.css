@@ -1,0 +1,299 @@
+@media screen and (max-width: 700px) {
+  #progressBar {
+    display: none;
+  }
+
+  .load .loader {
+    width: 200px;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .my-nav {
+    height: 80px;
+  }
+
+  .my-nav-logo h3 {
+    font-size: 1.5rem;
+  }
+
+  .my-nav-list ul {
+    display: none;
+  }
+
+  .my-nav-icons {
+    background: var(--primary-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+  }
+
+  .my-nav-icons > * {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+  }
+
+  .my-nav-icons svg {
+    width: 25px;
+    height: 25px;
+    color: white;
+    transition: all 0.3s ease-in;
+  }
+
+  .my-nav-icons svg:hover {
+    color: rgb(255, 170, 234);
+  }
+
+  .my-nav-button {
+    display: flex;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my-nav-button button {
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .my-header {
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+  }
+
+  .my-header .header-text h4 {
+    font-size: 1.5rem;
+  }
+
+  .my-header .header-text h2 {
+    font-size: 3rem;
+  }
+
+  .my-header .header-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .my-header .header-text .header-text-link a:nth-child(1) {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .my-header .header-text .header-text-link a:nth-child(2) {
+    width: 120px;
+    font-size: 16px;
+    height: 40px;
+  }
+
+  .my-about {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .my-about .about-text {
+    margin: 20px;
+  }
+
+  .my-about .about-text h3 {
+    font-size: 2rem;
+  }
+
+  .my-about .about-text p {
+    font-size: 1rem;
+  }
+
+  .my-food {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .my-food .food-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .my-food .food-text .food-search {
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .my-food .food-text .food-search input {
+    width: 90%;
+  }
+
+  .my-food .food-text h3 {
+    font-size: 2rem;
+  }
+
+  .my-food .food-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .my-food .food-list .food-card {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .my-food .food-list .food-card .food-card-body h3 {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+
+  .my-food .food-list .food-card .food-card-body p {
+    font-size: 1rem;
+  }
+
+  .my-quote h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .my-reservation {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .my-reservation .reservation-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .my-reservation .reservation-list .reservation-info .card-info:hover {
+    box-shadow: none;
+  }
+
+  .my-reservation .reservation-list .reservation-info .card-info .card-number {
+    font-size: 2rem;
+  }
+
+  .my-reservation .reservation-list .reservation-info .card-info .card-text {
+    font-size: 1.1rem;
+  }
+
+  .my-reservation .reservation-list .reservation-card {
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .my-reservation .reservation-list .reservation-card:hover {
+    box-shadow: none;
+  }
+
+  .my-reservation .reservation-text h3 {
+    font-size: 2rem;
+  }
+
+  .my-reservation .reservation-text p {
+    font-size: 1rem;
+  }
+
+  .modal-login {
+    width: 80vw;
+    padding: 1.2rem;
+  }
+
+  .modal-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .modal-header span {
+    font-size: 1.5rem;
+  }
+
+  .modal-form .form-group input {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .modal-form .form-group label {
+    font-size: 16px;
+  }
+
+  .modal-footer .button button {
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+
+  .chat {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    bottom: 90px;
+  }
+
+  .chat svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact .contact-sosmed {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact .contact-sosmed h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact .contact-sosmed ul li {
+    padding: 1em;
+  }
+
+  .contact .contact-sosmed ul li a {
+    font-size: 1.1rem;
+  }
+
+  .contact .contact-content {
+    padding: 0 20px;
+  }
+
+  .contact .contact-content h3 {
+    font-size: 2rem;
+  }
+
+  .contact .contact-content .list-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .contact .contact-content .list-card .contact-card h3 {
+    font-size: 2rem;
+  }
+
+  .contact .contact-content .list-card .contact-card p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 0 20px;
+    height: 50vh;
+  }
+
+  .footer h3 {
+    font-size: 2rem;
+  }
+
+  .footer h6 {
+    font-size: 1.15rem;
+    margin-top: 0;
+  }
+}
