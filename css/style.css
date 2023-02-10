@@ -18,7 +18,7 @@ body {
 }
 .loaderWrapper {
   display: flex;
-  position: absolute;
+  position: fixed !important;
   height: 100%;
   width: 100%;
   z-index: 2000;
@@ -85,7 +85,9 @@ body {
   height: 100%;
   position: fixed;
 }
-
+#nav {
+  display: none !;
+}
 #progressBar {
   top: 0;
   right: 0;
