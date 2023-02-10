@@ -1,3 +1,12 @@
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.querySelector(".loaderWrapper").style.display = "none";
+}
 const nav = document.querySelector(".my-nav");
 
 window.addEventListener("scroll", function () {

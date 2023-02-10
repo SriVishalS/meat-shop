@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: Poppins, sans-serif;
   overflow-x: hidden;
+  font-family: "Signika Negative", sans-serif;
 }
-body{
+body {
   scroll-behavior: smooth;
 }
 :root {
@@ -16,7 +16,63 @@ body{
   --fourth-color: #87bfff;
   --shadow-primary-color: rgb(122, 107, 218, 0.3);
 }
+.loaderWrapper {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  background-color: #fff;
+  flex-direction: column;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px dotted slateblue;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px dotted #ff8787;
+  border-style: solid solid dotted;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
+}
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 /* style for custom scrollbar */
 ::-webkit-scrollbar {
   width: 0;
