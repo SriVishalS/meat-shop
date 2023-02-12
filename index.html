@@ -5,11 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh Eats !</title>
+    <title>Fresh Meats </title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="./img/webLogo.png">
+    <script src="js/script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('YAtIA9QcTRbr2da2v');
+        })();
+    </script>
+
 </head>
 
 <body id="home" onload="myFunction()">
@@ -17,7 +26,7 @@
     <div id="progressBar"></div>
     <div id="scrollPath"></div>
     <div class="cursor"></div>
-   
+
 
     <section id="nav">
         <nav class="my-nav">
@@ -93,7 +102,7 @@
                 </ul>
             </div>
             <div class="my-nav-button">
-                <button id="login">Login</button>
+                <button id="login">Subscibe</button>
             </div>
         </nav>
     </section>
@@ -102,27 +111,23 @@
         <div class="login" id="modal">
             <div class="modal-login">
                 <div class="modal-header">
-                    <h3>Login</h3>
+                    <h3>Subscribe To Our NewsLetter !</h3>
                     <span id="tutup">&times;</span>
                 </div>
                 <div class="modal-body">
                     <div class="modal-form">
                         <form action="">
-                            <div class="form-group">
+                            <div class="form-group" style="margin-top: 20px;">
                                 <label for="">Email</label>
-                                <input type="text" placeholder="Your name">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Password</label>
-                                <input type="password" placeholder="Your password">
+                                <input type="text" placeholder="Your Email">
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <div class="button">
-                        <button id="batal">Batal</button>
-                        <button>Submit</button>
+                        <button id="batal">Close</button>
+                        <button onclick="subscribe()">Submit</button>
                     </div>
                 </div>
             </div>
@@ -170,7 +175,7 @@
     <section id="food">
         <div class="my-food" id="my-food">
             <div class="food-text">
-                <h3>Our Best Food</h3>
+                <h4>Our Best Food</h4>
                 <div class="food-search">
                     <form action="">
                         <input type="text" placeholder="search food">
@@ -180,10 +185,10 @@
             <div class="food-list">
                 <div class="food-card">
                     <div class="food-card-image">
-                        <img src="img/image/vegetables-1085063_1920.jpg" alt="Hamburger">
+                        <img src="./meat Images/c1.jpg" alt="Hamburger">
                     </div>
                     <div class="food-card-body">
-                        <h3>Title</h3>
+                        <h4>Raw Chicken</h4>
                         <div class="harga">
                             <h4>Rs.55 per Kg</h4>
                             <a>Buy Now</a>
@@ -195,9 +200,9 @@
                         <img src="img/image/pancakes-2291908_1920.jpg" alt="Hamburger">
                     </div>
                     <div class="food-card-body">
-                        <h3>Title</h3>
+                        <h4>Egg Pan Cake</h4>
                         <div class="harga">
-                            <h4>Rs.55 per Kg</h4>
+                            <h4>Rs.550 per Kg</h4>
                             <a>Buy Now</a>
                         </div>
                     </div>
@@ -207,9 +212,9 @@
                         <img src="img/image/salmon-518032_1920.jpg" alt="Hamburger">
                     </div>
                     <div class="food-card-body">
-                        <h3>Title</h3>
+                        <h4>Marienated Chicken</h4>
                         <div class="harga">
-                            <h4>Rs.55 per Kg</h4>
+                            <h4>Rs.500 per Kg</h4>
                             <a>Buy Now</a>
                         </div>
                     </div>
@@ -219,9 +224,9 @@
                         <img src="img/image/pancake-1984716_1920.jpg" alt="Hamburger">
                     </div>
                     <div class="food-card-body">
-                        <h3>Title</h3>
+                        <h4>Chicken Chill Paratha</h4>
                         <div class="harga">
-                            <h4>Rs.55 per Kg</h4>
+                            <h4>Rs.550 per Kg</h4>
                             <a>Buy Now</a>
                         </div>
                     </div>
@@ -231,21 +236,21 @@
                         <img src="img/image/food-712665_1920.jpg" alt="Hamburger">
                     </div>
                     <div class="food-card-body">
-                        <h3>Title</h3>
+                        <h4>Nethili Fry</h4>
                         <div class="harga">
-                            <h4>Rs.55 per Kg</h4>
+                            <h4>Rs.350 per Kg</h4>
                             <a>Buy Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="food-card">
                     <div class="food-card-image">
-                        <img src="img/image/yogurt-1442034_1920.jpg" alt="Hamburger">
+                        <img src="./meat Images/c2.jpg" alt="Hamburger">
                     </div>
                     <div class="food-card-body">
-                        <h3>Title</h3>
+                        <h4>Chicken Thali</h4>
                         <div class="harga">
-                            <h4>Rs.55 per Kg</h4>
+                            <h4>Rs.690 per Kg</h4>
                             <a>Buy Now</a>
                         </div>
                     </div>
@@ -263,7 +268,7 @@
     <section id="reservation">
         <div class="my-reservation">
             <div class="reservation-text">
-                <h3>Reservation</h3>
+                <h3>Reserve Your Seats !</h3>
                 <p>Fresh cuts, delicious meats. Visit us for your next barbeque feast!</p>
             </div>
             <div class="reservation-list">
@@ -297,22 +302,80 @@
                     <form action="">
                         <div class="reservation-group">
                             <label for="">Your Name</label>
-                            <input type="text" placeholder="Your name">
+                            <input type="text" placeholder="Your name" id="rInp">
                         </div>
                         <div class="reservation-group">
                             <label for="">Number Of People</label>
-                            <input type="number">
+                            <input type="number" id="rcount">
                         </div>
                         <div class="reservation-group">
                             <label for="">Date</label>
-                            <input type="date">
+                            <input type="date" id="rDate">
                         </div>
                         <div class="reservation-group">
-                            <label for="">Description</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
+                            <button type="button" onclick="reserveSeat()">Reserve Seats</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="reservation">
+        <div class="my-reservation">
+            <div class="reservation-text">
+                <h3>Order Fresh And Juicy Meat !</h3>
+                <p>Fresh cuts, delicious meats. Order your next barbeque feast!</p>
+            </div>
+            <div class="reservation-list">
+                <div class="reservation-info">
+                    <div class="card-info">
+                        <div class="card-number">
+                            <p>1</p>
+                        </div>
+                        <div class="card-text">
+                            <p>Fill in The Details To Place The Order Of Items You Want........</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-number">
+                            <p>2</p>
+                        </div>
+                        <div class="card-text">
+                            <p>Enter Valid Email And Residential Address...........</p>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-number">
+                            <p>3</p>
+                        </div>
+                        <div class="card-text">
+                            <p>Placed Orders Will Be Delivered In Time, Have A Blast Feast With Your favorite Ones!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-card">
+                    <form action="">
+                        <div class="reservation-group">
+                            <label for="">Your Name</label>
+                            <input type="text" placeholder="Your name" id="bName">
                         </div>
                         <div class="reservation-group">
-                            <button type="submit">Reservation</button>
+                            <label for="">Your Email</label>
+                            <input type="email" id="bMail">
+                        </div>
+                        <div class="reservation-group">
+                            <label for="">Residential Address</label>
+                            <textarea name="" id="bAddress" cols="30" rows="10"
+                                placeholder="1, Grand Southern Trunk Rd, Alandur, St.Thomas Mount, Tamil Nadu 600016"></textarea>
+                        </div>
+                        <div class="reservation-group">
+                            <label for="">List the Items You Want !</label>
+                            <textarea name="" id="bOrder" cols="30" rows="10"
+                                placeholder="Eg: 1.Butter Chicken,2.Fresh Chicken, 3.Marinated Lobster Etc Etc...."></textarea>
+                        </div>
+                        <div class="reservation-group">
+                            <button type="button" onclick="bookMeat()">Place Order</button>
                         </div>
                     </form>
                 </div>
@@ -337,7 +400,7 @@
                 <div class="list-card">
                     <div class="contact-card">
                         <h3>Our Address</h3>
-                        <p>Shop Address !
+                        <p>O V Alagesan Nagar Near Ambattur Railway Station, Chennai (Madras) India
                         </p>
                     </div>
                     <div class="contact-card">
@@ -375,7 +438,7 @@
         <p style="margin: 10px;">Preparing Tender Meat......</p>
     </div>
 
-    <script src="js/script.js"></script>
+
 </body>
 
 </html>

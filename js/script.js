@@ -1,7 +1,32 @@
+// EMAIL CONFIG
+reserveSeat = () => {
+  const usrObj = {
+    from_name: document.getElementById("rInp").value,
+    user_seats: document.getElementById("rcount").value,
+    booked_date: document.getElementById("rDate").value,
+  };
+  emailjs.send("service_kb5807z", "template_kmdiv3k", usrObj).then((res) => {
+    alert("Mail Sent Sucessfuly");
+  });
+};
+bookMeat = () => {
+  const usrObj2 = {
+    customer_name: document.getElementById("bName").value,
+    customer_email: document.getElementById("bMail").value,
+    customer_address: document.getElementById("bAddress").value,
+    customer_items: document.getElementById("bOrder").value,
+  };
+  emailjs.send("service_zjy9m1i", "template_3gujfea", usrObj2).then((res) => {
+    alert("Mail Sent Sucessfuly");
+  });
+};
+subscribe = () => {
+  alert("You Have Subscibed Us Thank You :)");
+};
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 800);
+  myVar = setTimeout(showPage, 500);
 }
 
 function showPage() {
