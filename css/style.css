@@ -297,8 +297,8 @@ body {
 }
 /* end nav style */
 
-h3 {
-  font-size: 3rem;
+h4 {
+  font-size: 2.3rem;
   font-weight: inherit;
   position: relative;
 }
@@ -583,12 +583,10 @@ h3 {
   height: 50px;
   color: white;
 }
-/* end chat style */
 
-/* style for class quote */
 .my-quote {
   width: 100vw;
-  height: 40vh;
+  height: 100vh;
   display: grid;
   place-content: center;
   background: url(../img/image/undraw_special_event_4aj8.png);

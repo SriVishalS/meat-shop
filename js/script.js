@@ -1,14 +1,4 @@
 // EMAIL CONFIG
-reserveSeat = () => {
-  const usrObj = {
-    from_name: document.getElementById("rInp").value,
-    user_seats: document.getElementById("rcount").value,
-    booked_date: document.getElementById("rDate").value,
-  };
-  emailjs.send("service_kb5807z", "template_kmdiv3k", usrObj).then((res) => {
-    alert("Mail Sent Sucessfuly");
-  });
-};
 bookMeat = () => {
   const usrObj2 = {
     customer_name: document.getElementById("bName").value,
@@ -17,7 +7,7 @@ bookMeat = () => {
     customer_items: document.getElementById("bOrder").value,
   };
   emailjs.send("service_zjy9m1i", "template_3gujfea", usrObj2).then((res) => {
-    alert("Mail Sent Sucessfuly");
+    alert("Your oreder Is Recived We Will Deliver You Shortly");
   });
 };
 subscribe = () => {
